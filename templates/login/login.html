@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<body style="background-color:#F2F3F4">
+<head>
+<title>Agenda I Login </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-widh,
+initial-scale=1, maximun-scale=1">
+<meta name="descripcion" content="examen">
+<meta name="author" content="Nayeli Contreras">
+<meta name="keywords" content="Programacion Web">
+<link href="bootstrap/css/login-estilo.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<div class="card-body">
+<nav class="navbar navbar-default" style="background-color: #85C1E9">
+ <div class="col-sm-6 col-md-4 col-lg-2">
+  <img src="{% static 'img/logo ITPA.png' %}" width="250" height="80">
+</div>
+<div class="col-sm-6 col-md-4 col-lg-2">
+  <img src="{% static 'img/logo TNM.png' %}" width="210" height="80">
+</div>
+</nav>
+  </div>
+<form class="col-sm-6 offset-sm-3" action="" method="get"  >
+  <h1>Iniciar Secion</h1>
+<br>
+<br>
+    <label for="nombre" style="color:#000000">Numero de Control</label>
+  <br>
+  <input  type="ncontrol" class="form-control" id="exampleFormControlInput1" name="nombre" value=""  minlength="8" maxlength="32" placeholder=""  pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{8,32}" id="name"required>
+  <br>
+    <label for="nombre" style="color:#000000">Contraseña</label>
+    <br>
+     <input type="Password" class="form-control" id="" placeholder=""  minlength="8" maxlength="32" required>
+    <br>
+<div class="row">
+  <div class="col-sm-7 col-md-3 col-lg-2">
+<a href="mostrarUsuario"><input type="button" value="Usuario"></a>
+</div>
+<div class="col-sm-7 col-md-3 col-lg-2">
+<a href="http://127.0.0.1:8000/admin/"><input type="button" value="Administrador"></a>
